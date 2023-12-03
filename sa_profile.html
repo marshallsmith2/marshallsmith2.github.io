@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>St. Jude</title>
+    <link rel="stylesheet" href="stylefp.css"> 
+</head>
+
+<body>
+    <img src="https://t3.ftcdn.net/jpg/03/17/77/84/240_F_317778422_y6RQQY28FGamHXQpAXFSF86xPrRH86ew.jpg" alt="logo" width="150" height="100"> 
+    <!-- some how make this ^^ image at the top left hand corner-->
+    <img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/10992/b8b237ee-7cfe-4eab-b79b-dac389707899.jpg" alt="kids" width="500" height="200">
+
+    <header class="header-class">    
+        <nav class="nav-class">
+            <!--remember to replace href with link to other pages-->
+            <a href="http://127.0.0.1:5500/index-fp.html" class="nav-link-class">Homepage</a> |
+            <a href="http://127.0.0.1:5500/charities.html" class="nav-link-class">List of Charities</a> 
+        </nav>
+    </header>
+    
+    <h1>Salvation Army Charity Profile</h1>
+    <p>Salvation Army is a non-profit Christian organization that aims to preach the gospel of Jesus Christ internationally.
+    They prove to show that his name has no discrimination and you will be accepted as you are. They have social service programs that provide food, shelter, and clothing to 
+    anyone in need.
+    </p>
+
+    <button id="volunteerButton">Volunteer Now</button>
+    <div id="volunteerForm" style='display: none;'>
+        <h3>Volunteer Information</h3>
+        <form action="#" method="post" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required class="input-class">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required class="input-class">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" class="input-class">
+
+            <input type="submit" value="Submit" class="input-class">
+        </form>
+    </div>
+
+    <div id="successMessage" style="display: none;">
+        <p>Your volunteer information has been submitted successfully! Thank you for volunteering.</p>
+    </div>
+
+    <script src="charities-fp.js"></script>
+    <p>Number of Volunteers: <span id="volunteerCounter">0</span></p>
+</body>
+</html>
+
